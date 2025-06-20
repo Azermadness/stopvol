@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 255.12 255.12">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0 {
+        opacity: .63;
+      }
+
+      .st0, .st1 {
+        fill: #092b3e;
+      }
+
+      .st2 {
+        fill: #fff;
+        stroke-width: 7px;
+      }
+
+      .st2, .st3 {
+        stroke: #092b3e;
+        stroke-miterlimit: 10;
+      }
+
+      .st4, .st3 {
+        fill: #be1622;
+      }
+
+      .st3 {
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <circle class="st4" cx="118.7" cy="123.49" r="60.09"/>
+  <ellipse class="st0" cx="79.33" cy="190.66" rx="20.31" ry="5.27"/>
+  <g>
+    <rect class="st2" x="133.29" y="81.27" width="60.43" height="107.19" rx="16.55" ry="16.55"/>
+    <rect class="st1" x="150.26" y="70.72" width="26.5" height="12.22" rx="4.48" ry="4.48"/>
+    <rect class="st3" x="139.38" y="163.07" width="48.27" height="18.08" rx="9.04" ry="9.04"/>
+    <rect class="st3" x="139.38" y="138.98" width="48.27" height="18.08" rx="9.04" ry="9.04"/>
+    <rect class="st3" x="139.38" y="114.9" width="48.27" height="18.08" rx="9.04" ry="9.04"/>
+    <rect class="st3" x="139.38" y="90.81" width="48.27" height="18.08" rx="9.04" ry="9.04"/>
+  </g>
+</svg>
