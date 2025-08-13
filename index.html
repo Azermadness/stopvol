@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/src/style.css" />
         <title>Stopvol</title>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+        ></script>
     </head>
     <body class="overflow-x-hidden bg-(--primary) text-(--text-color)">
         <header
-            class="w-screen h-20 bg-(--primary) border-b-(--secondary) border-b-1 flex items-center justify-between fixed top-0 left-0 z-4"
+            class="w-screen h-20 max-md:h-40 bg-(--primary) border-b-(--secondary) border-b-1 flex items-center justify-between fixed top-0 left-0 z-4 max-md:flex-col"
         >
             <div class="w-1/4 flex items-center justify-around">
                 <img
@@ -19,7 +23,7 @@
                     class="w-2/3 h-fit"
                 />
             </div>
-            <div class="flex items-center justify-around w-1/2">
+            <div class="h-10 flex items-center justify-around max-md:w-full w-1/2">
                 <a
                     href="#accueil"
                     class="nav-button hover:text-(--secondary) focus:text-(--secondary)"
@@ -41,10 +45,10 @@
                     >Démonstration</a
                 >
             </div>
-            <div class="w-1/4 flex items-center justify-around h-full">
+            <div class="w-1/4 max-md:w-1/2 flex items-center justify-around h-full">
                 <a
                     href="#contactez-nous"
-                    class="w-40 h-10 bg-(--secondary) text-center flex justify-around flex-col rounded-xl"
+                    class="w-auto h-auto p-3 bg-(--secondary) text-center flex justify-around flex-col rounded-xl text-xl font-bold"
                 >
                     Contactez-nous
                 </a>
@@ -53,30 +57,26 @@
         <main>
             <div
                 id="accueil"
-                class="w-screen pt-40 flex items-center flex-row justify-end"
+                class="w-screen pt-40 max-md:pt-60 flex items-center flex-row max-md:flex-col justify-end"
             >
                 <div
-                    class="w-1/2 px-20 gap-3 flex flex-col items-start justify-center h-3/4"
+                    class="w-1/2 max-md:w-full max-md:text-center max-md:items-center px-20 gap-3 flex flex-col items-start justify-center h-3/4"
                 >
                     <p class="text-(--secondary)">
                         Votre sécurité, notre priorité.
                     </p>
                     <h1>
-                        Système anti<br />intrusion<br /><span
-                            class="text-(--secondary)"
-                            >lacrymogène</span
-                        >
+                        <span class="text-(--secondary)"
+                            >Protection pro-active</span
+                        ><br />
+                        pour les
+                        <span class="text-(--secondary)">professionnels</span
+                        ><br />
+                        et les <span class="text-(--secondary)">artisans</span>
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolor, veritatis accusamus quia voluptate cum
-                        consequuntur vero quisquam tempore magnam eos! Placeat
-                        natus beatae, ipsam quam iste aliquid doloremque unde
-                        esse.
-                    </p>
                     <a
                         href="#contactez-nous"
-                        class="w-40 h-10 bg-(--secondary) text-center flex justify-around flex-col rounded-xl"
+                        class=" max-md:mb-10 w-auto h-auto bg-(--secondary) text-center flex justify-around flex-col rounded-xl text-xl font-bold p-3"
                     >
                         Contactez-nous
                     </a>
@@ -84,134 +84,76 @@
                 <img
                     src="https://picsum.photos/id/1025/800/800"
                     alt="test 2"
-                    class="w-1/2 h-130 rounded-l-3xl object-cover"
+                    class="w-1/2 max-md:w-full max-md:h-70 h-130 rounded-l-3xl object-cover"
                 />
+            </div>
+            <div
+                id="partenaires"
+                class="w-full h-50 gap-3 flex items-center justify-center pt-10 max-md:flex-wrap"
+            >
+                <div
+                    class="w-1/5 max-md:w-1/3 h-full max-md:h-1/2 flex justify-center content-center bg-(--color-bg-logo-1)"
+                >
+                    <img
+                        class="object-contain"
+                        src="./src/makita.webp"
+                        alt="makita"
+                    />
+                </div>
+                <div
+                    class="w-1/5 max-md:w-1/3 h-full max-md:h-1/2 flex justify-center content-center bg-(--color-bg-logo-2)"
+                >
+                    <img
+                        class="object-contain"
+                        src="./src/milwaukee.webp"
+                        alt="milwaukee"
+                    />
+                </div>
+                <div
+                    class="w-1/5 max-md:w-1/3 h-full max-md:h-1/2 flex justify-center content-center bg-(--color-bg-logo-3)"
+                >
+                    <img
+                        class="object-contain"
+                        src="./src/dewalt.svg"
+                        alt="dewalt"
+                    />
+                </div>
+                <div
+                    class="w-1/5 max-md:w-1/3 h-full max-md:h-1/2 flex justify-center content-center bg-(--color-bg-logo-4)"
+                >
+                    <img
+                        class="object-contain"
+                        src="./src/bosch.webp"
+                        alt="bosch"
+                    />
+                </div>
             </div>
             <div
                 id="a-propos"
                 class="w-screen flex items-center flex-col justify-center pt-30"
             >
                 <div
-                    class="flex-col w-1/2 justify-center items-center text-center pb-10"
+                    class="flex-col w-1/2 max-md:w-full justify-center items-center text-center pb-10"
                 >
                     <p class="text-(--secondary)">A propos</p>
                     <h1>
                         <span class="text-(--secondary)"
-                            >Les fonctionnalités</span
-                        ><br />du système
+                            >Détecté. Protégé. Alerté.
+                        </span>
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ipsa, perspiciatis? Cum voluptatem provident in
-                        sed tempora ea quam ullam quas voluptatibus, eligendi
-                        inventore perspiciatis natus facilis quia harum atque
-                        quis!
+                    <p class="text-2xl">
+                        Vous travaillez vite, vous voulez une sécurité qui
+                        réagit aussi vite.
+                        <br />
+                        On vous fait passer de victime passive à acteur
+                        dissuasif.<br /><br />
+                        <b>En 5 actions clefs, vous reprenez le pouvoir :</b>
                     </p>
                 </div>
                 <div
-                    class="w-5/6 h-1/2 flex items-center justify-center flex-wrap gap-3 mb-3 z-2"
+                    class="w-5/6 max-md:w-full h-1/2 flex items-center justify-center flex-wrap gap-3 mb-3 z-2"
                 >
-                    <div class="w-5/18 h-1/2 flex items-center justify-center">
-                        <div
-                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
-                        >
-                            <img
-                                class="object-cover"
-                                src="./src/gaz.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
-                        >
-                            <h2 class="text-left">Fonctionnalité 1</h2>
-                            <p class="text-left">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolor, veritatis accusamus
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-5/18 h-1/2 flex items-center justify-center">
-                        <div
-                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
-                        >
-                            <img
-                                class="object-cover"
-                                src="./src/camera.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
-                        >
-                            <h2 class="text-left">Fonctionnalité 1</h2>
-                            <p class="text-left">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolor, veritatis accusamus
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-5/18 h-1/2 flex items-center justify-center">
-                        <div
-                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
-                        >
-                            <img
-                                class="object-cover"
-                                src="./src/alarme.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
-                        >
-                            <h2 class="text-left">Fonctionnalité 1</h2>
-                            <p class="text-left">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolor, veritatis accusamus
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-5/18 h-1/2 flex items-center justify-center">
-                        <div
-                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
-                        >
-                            <img
-                                class="object-cover"
-                                src="./src/batterie.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
-                        >
-                            <h2 class="text-left">Fonctionnalité 1</h2>
-                            <p class="text-left">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolor, veritatis accusamus
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-5/18 h-1/2 flex items-center justify-center">
-                        <div
-                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
-                        >
-                            <img
-                                class="object-cover"
-                                src="./src/connectiv.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
-                        >
-                            <h2 class="text-left">Fonctionnalité 1</h2>
-                            <p class="text-left">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolor, veritatis accusamus
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-5/18 h-1/2 flex items-center justify-center">
+                    <div class="w-5/18 max-md:w-full h-1/2 flex items-center justify-center">
                         <div
                             class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
                         >
@@ -224,13 +166,104 @@
                         <div
                             class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
                         >
-                            <h2 class="text-left">Fonctionnalité 1</h2>
+                            <h2 class="text-left">Le système détecte</h2>
                             <p class="text-left">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolor, veritatis accusamus
+                                priorise la réaction et vous alerte
+                                immédiatement.
                             </p>
                         </div>
                     </div>
+                    <div class="w-5/18 max-md:w-full h-1/2 flex items-center justify-center">
+                        <div
+                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
+                        >
+                            <img
+                                class="object-cover"
+                                src="./src/alarme.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
+                        >
+                            <h2 class="text-left">Un choc :</h2>
+                            <p class="text-left">Il prévient en hurlant</p>
+                        </div>
+                    </div>
+                    <div class="w-5/18 max-md:w-full h-1/2 flex items-center justify-center">
+                        <div
+                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
+                        >
+                            <img
+                                class="object-cover"
+                                src="./src/camera.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
+                        >
+                            <h2 class="text-left">Protection active :</h2>
+                            <p class="text-left">
+                                Une cartouche de gaz lacrymogène est prête à
+                                agir en cas d'effraction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-5/18 max-md:w-full h-1/2 flex items-center justify-center">
+                        <div
+                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
+                        >
+                            <img
+                                class="object-cover"
+                                src="./src/gaz.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
+                        >
+                            <h2 class="text-left">Effet immédiat :</h2>
+                            <p class="text-left">
+                                toux, larmes, irritation de la peau. L'individu
+                                recule, surpris, désorienté.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-5/18 max-md:w-full h-1/2 flex items-center justify-center">
+                        <div
+                            class="h-20 w-20 -mr-10 rounded-full bg-(--text-color) border-(--secondary) border-1 z-2 shrink-0"
+                        >
+                            <img
+                                class="object-cover"
+                                src="./src/connectiv.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="w-full h-full bg-(--primary) rounded-4xl border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed p-5 pl-15 flex items-start justify-center flex-col"
+                        >
+                            <h2 class="text-left">
+                                Notification immédiate sur votre téléphone :
+                            </h2>
+                            <p class="text-left">
+                                alerté en temps réel, avec les photos du direct,
+                                où que vous soyez.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex-col w-2/3 max-md:w-full justify-center items-center text-center pt-10 text-2xl"
+                >
+                    <p class="text-(--secondary) font-bold text-4xl">
+                        Ce n'est pas un gadget, c'est une réaction de terrain.
+                    </p>
+                    <p>
+                        <br />Votre fourgon n'est plus une cible facile, il
+                        devient un espace dissuasif , sécurisé et intelligent.
+                        Vous savez que s'il tente : il va pleurer et tousser.
+                    </p>
                 </div>
             </div>
             <div
@@ -238,34 +271,38 @@
                 class="flex items-center flex-col justify-center pt-30"
             >
                 <div
-                    class="flex-col w-1/2 justify-center items-center pb-10 text-center"
+                    class="flex-col w-1/2 max-md:w-full justify-center items-center pb-10 text-center"
                 >
                     <p class="text-(--secondary)">Avantages</p>
                     <h1>
+                        Le vrai danger <br />
                         <span class="text-(--secondary)"
-                            >Solution adaptée pour les</span
-                        ><br />professionnels & artisans
+                            >ce n'est pas le vol.</span
+                        >
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ipsa, perspiciatis? Cum voluptatem provident in
-                        sed tempora ea quam ullam quas voluptatibus, eligendi
-                        inventore perspiciatis natus facilis quia harum atque
-                        quis!
+                    <p class="text-2xl">
+                        C’est de continuer à croire qu’on est protégé… alors
+                        qu’on ne l’est pas.<br /><br />
+                        Tant qu’on pense qu’un cadenas, une alarme ou une caméra
+                        suffisent, on reste à la merci de la prochaine attaque.
+                        <br /><br />
+                    </p>
+                    <p class="text-4xl text-(--secondary) font-bold">
+                        Et cette illusion coûte cher :
                     </p>
                 </div>
                 <div
-                    class="h-1/2 w-screen flex items-center flex-row justify-between"
+                    class="h-100 max-md:h-140 w-full flex max-md:flex-col items-center flex-row justify-between"
                 >
                     <img
                         src="https://picsum.photos/id/1025/800/800"
                         alt="test 2"
-                        class="w-2/5 h-100 rounded-r-3xl object-cover"
+                        class="w-2/5 max-md:w-full h-full max-md:h-80 rounded-r-3xl object-cover"
                     />
                     <div
-                        class="w-1/2 gap-3 flex flex-col items-start justify-evenly h-full"
+                        class="w-1/2 max-md:w-full max-md:pt-10 h-60 gap-3 flex flex-col items-start justify-evenly flex-wrap max-md:flex-nowrap"
                     >
-                        <div class="flex justify-start items-center">
+                        <div class="flex justify-start items-center h-3/10 max-md:w-full">
                             <svg
                                 class="w-10 h-5 pr-5 text-(--secondary)"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -281,11 +318,211 @@
                                 />
                             </svg>
                             <div>
-                                <h2>item titre</h2>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quos animi laborum
-                                </p>
+                                <h2>Des milliers d'euros</h2>
+                                <p>d'outils envolés</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center h-3/10 max-md:w-full">
+                            <svg
+                                class="w-10 h-5 pr-5 text-(--secondary)"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <div>
+                                <h2>Des chantiers arrêtés net</h2>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center h-3/10 max-md:w-full">
+                            <svg
+                                class="w-10 h-5 pr-5 text-(--secondary)"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <div>
+                                <h2>Des clients déçus</h2>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center h-3/10 max-md:w-full">
+                            <svg
+                                class="w-10 h-5 pr-5 text-(--secondary)"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <div>
+                                <h2>Des vacances annulées</h2>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center h-3/10 max-md:w-full">
+                            <svg
+                                class="w-10 h-5 pr-5 text-(--secondary)"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <div>
+                                <h2>Des nuits blanches</h2>
+                                <p>à tendre l'oreille au moindre bruit</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center h-3/10 max-md:w-full">
+                            <svg
+                                class="w-10 h-5 pr-5 text-(--secondary)"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <div>
+                                <h2>Une assurance</h2>
+                                <p>qui finit par dire non...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="py-10 text-2xl font-bold text-center">
+                    Et cette impression, tenace, qu’on est seul. Vulnérable. À
+                    bout. <br /><br />
+                    <span class="text-(--secondary) text-3xl"
+                        >Mais un jour, j’ai compris :</span
+                    ><br />
+                    la vraie protection, ce n’est pas d’attendre l’intrusion.
+                </p>
+                <div
+                    class="h-150 w-screen flex items-center flex-row max-md:flex-col justify-between"
+                >
+                    <div
+                        class="flex flex-col justify-center items-end max-md:items-center w-1/2 max-md:w-full text-right max-md:text-center"
+                    >
+                        <p class="text-3xl font-bold">
+                            <span class="text-(--secondary) text-5xl"
+                                >C’est de la dissuader <br />
+                                la détecter, la stopper</span
+                            ><br />
+                            avant même qu’elle commence.
+                        </p>
+                        <p class="text-2xl">
+                            <br />
+                            Depuis, je respire.<br />
+                            Et surtout : je dors tranquille.
+                        </p>
+                        <div class="w-1/2 h-0 border-t-white border my-10"></div>
+                        <p class="text-xl">
+                            <b>Julien ROMANO</b><br>
+                            Artisan en sécurité - Concepteur du système STOPVOL
+                        </p>
+                    </div>
+                    <img
+                        src="./src/julien.jpeg"
+                        alt="test 2"
+                        class="w-2/5 max-md:w-full h-150 max-md:h-90 rounded-l-3xl object-cover"
+                    />
+                </div>
+            </div>
+            <div
+                id="demonstration"
+                class="flex items-center flex-col justify-center pt-30"
+            >
+                <div
+                    class="flex-col w-1/2 max-md:w-full justify-center items-center pb-10 text-center"
+                >
+                    <p class="text-(--secondary)">Démonstration</p>
+                    <h1>
+                        Même moi,<br /><span class="text-(--secondary)"
+                            >je ne l'ai pas vu venir.</span
+                        >
+                    </h1>
+                    <p class="text-2xl">
+                        Et pourtant… c’est moi qui l’ai installé.
+                        <br />
+                        <br />
+                        Regardez ce que
+                        <b class="text-3xl">STOP VOL</b> déclenche en quelques
+                        secondes, quand quelqu’un tente d’ouvrir un fourgon
+                        protégé.
+                    </p>
+                </div>
+                <div
+                    class="w-full h-150 flex items-center flex-row max-md:flex-col justify-between"
+                >
+                    <div
+                        class="h-full w-1/2 max-md:w-full rounded-4xl flex items-center justify-center"
+                    >
+                        <iframe
+                            class="w-4/5 h-auto rounded-4xl aspect-video"
+                            src="https://www.youtube.com/embed/UupeKAvCI7I"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div
+                        class="w-1/2 max-md:w-full gap-3 flex flex-col items-start justify-evenly h-full"
+                    >
+                        <p class="text-(--secondary) text-3xl font-bold">
+                            Test réel, gaz réel, douleur réelle. <br />
+                            Aucun acteur. Aucun trucage.
+                        </p>
+                        <div class="flex justify-start items-center">
+                            <svg
+                                class="w-10 h-5 pr-5 text-(--secondary)"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <div>
+                                <h2>Pose complète</h2>
+                                <p>en 35 minutes</p>
                             </div>
                         </div>
                         <div class="flex justify-start items-center">
@@ -301,14 +538,11 @@
                                     fill-rule="evenodd"
                                     d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
                                     clip-rule="evenodd"
-                                />
+                                ></path>
                             </svg>
                             <div>
-                                <h2>item titre</h2>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quos animi laborum
-                                </p>
+                                <h2>Compatible avec batteries pro</h2>
+                                <p>(Makita, Bosch, Dewalt, Milwaukee)</p>
                             </div>
                         </div>
                         <div class="flex justify-start items-center">
@@ -324,56 +558,47 @@
                                     fill-rule="evenodd"
                                     d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
                                     clip-rule="evenodd"
-                                />
+                                ></path>
                             </svg>
                             <div>
-                                <h2>item titre</h2>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quos animi laborum
-                                </p>
+                                <h2>Détection immédiate + alerte + riposte</h2>
+                                <p>(gaz + sirène)</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center">
+                            <svg
+                                class="w-10 h-5 pr-5 text-(--secondary)"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <div>
+                                <h2>Invisible de l'exterieur</h2>
                             </div>
                         </div>
                         <a
                             href="#contactez-nous"
-                            class="w-60 h-10 bg-(--secondary) text-center flex justify-around flex-col rounded-xl"
+                            class="w-auto h-auto bg-(--secondary) text-center flex justify-around flex-col rounded-xl p-3 text-xl font-bold"
                         >
-                            Réservez votre intervention
+                            Réserver mon diagnostic gratuit
                         </a>
                     </div>
                 </div>
             </div>
             <div
-                id="demonstration"
-                class="h-200 flex items-center flex-col justify-center pt-30"
-            >
-                <div
-                    class="flex-col w-1/2 justify-center items-center pb-10 text-center"
-                >
-                    <p class="text-(--secondary)">Démonstration</p>
-                    <h1>
-                        Démonstration<br /><span class="text-(--secondary)"
-                            >sur site et chantier</span
-                        >
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ipsa, perspiciatis? Cum voluptatem provident in
-                        sed tempora ea quam ullam quas voluptatibus, eligendi
-                        inventore perspiciatis natus facilis quia harum atque
-                        quis!
-                    </p>
-                </div>
-                <div
-                    class="max-h-150 max-w-[80vw] h-full w-auto bg-amber-100 aspect-video rounded-4xl"
-                ></div>
-            </div>
-            <div
-                class="h-100 relative z-1 flex items-center flex-col justify-center bg-(--secondary) mt-30"
+                class="h-100 max-md:h-150 relative z-1 flex items-center flex-col justify-center bg-(--secondary) mt-10 overflow-x-hidden"
             >
                 <!-- logo 3 -->
                 <svg
-                    class="w-auto h-100 absolute right-0 top-0 z-1 text-(--text-color) opacity-20"
+                    class="w-auto h-100 absolute right-0 bottom-0-0 z-1 text-(--text-color) opacity-20"
                     version="1.1"
                     viewBox="20 45 185 185"
                     width="500"
@@ -518,7 +743,7 @@
                 </svg>
                 <div
                     id="btn-left"
-                    class="absolute top-0 left-0 w-3/20 h-100 bg-linear-to-r from-red-900 to-transparent z-3 opacity-50 hover:opacity-80 transition-opacity duration-300"
+                    class="absolute top-0 left-0 w-3/20 h-100 max-md:h-150 bg-linear-to-r from-red-900 to-transparent z-3 opacity-50 hover:opacity-80 transition-opacity duration-300"
                 >
                     <svg
                         class="absolute h-30 w-20 top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 -scale-100"
@@ -544,7 +769,7 @@
                 </div>
                 <div
                     id="btn-right"
-                    class="absolute top-0 right-0 w-3/20 h-100 bg-linear-to-l from-red-900 to-transparent z-3 opacity-50 hover:opacity-80 transition-opacity duration-300"
+                    class="absolute top-0 right-0 w-3/20 h-100 max-md:h-150 bg-linear-to-l from-red-900 to-transparent z-3 opacity-50 hover:opacity-80 transition-opacity duration-300"
                 >
                     <svg
                         class="absolute h-30 w-20 top-1/2 right-1/3 transform translate-x-1/2 -translate-y-1/2"
@@ -569,7 +794,7 @@
                     </svg>
                 </div>
                 <div
-                    class="flex flex-col w-[100vw] h-100 p-10 justify-center items-center text-center relative z-2"
+                    class="flex flex-col w-[100vw] h-100 max-md:h-150 p-10 justify-center items-center text-center relative z-2"
                 >
                     <p class="text-(--text-color)">Témoignages</p>
                     <h1>Ce que les gens disent !</h1>
@@ -878,13 +1103,13 @@
             </div>
             <div
                 id="contactez-nous"
-                class="flex items-center flex-col justify-center pt-30 w-screen"
+                class="flex items-center flex-col justify-center pt-10 w-screen"
             >
                 <p class="text-(--secondary)">Contact</p>
                 <h1>
                     Contactez<span class="text-(--secondary)"> nous !</span>
                 </h1>
-                <form id="contactForm" class="flex flex-row flex-wrap w-3/5">
+                <form id="contactForm" class="flex flex-row flex-wrap w-3/5 max-md:w-full">
                     <div class="w-1/2 p-2">
                         <label for="nom" class="block mb-2">Nom*</label>
                         <input
@@ -954,7 +1179,10 @@
                             required
                         ></textarea>
                     </div>
-                    <div class="g-recaptcha m-2" data-sitekey="your_site_key"></div>
+                    <div
+                        class="g-recaptcha m-2"
+                        data-sitekey="your_site_key"
+                    ></div>
                     <input
                         type="submit"
                         value="Réservez votre démonstration"
@@ -969,9 +1197,9 @@
         </main>
         <footer class="w-full bg-(--primary) text-(--text-color) pt-30">
             <div
-                class="w-full h-20 flex items-center justify-between px-[10vw]"
+                class="w-full h-20 max-md:h-full flex max-md:flex-col items-center justify-between px-[10vw]"
             >
-                <div class="h-full w-1/6 flex items-center justify-between">
+                <div class="h-full w-1/6 max-md:w-full flex items-center justify-between">
                     <svg
                         class="h-1/2 w-auto rounded-full border-1 border-(--text-color) p-[3%]"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1036,14 +1264,14 @@
                     alt="test"
                     class="w-auto h-full"
                 />
-                <p class="text-center w-1/6">
+                <p class="text-center w-1/6 max-md:w-full">
                     Système&nbsp;anti&#8209;intrusion<br />lacrymogène
                 </p>
             </div>
             <div
-                class="w-full h-60 flex items-center justify-evenly bg-(--secondary) text-(--text-color)"
+                class="max-md:mt-10 max-md:flex-col w-full flex items-center justify-evenly bg-(--secondary) text-(--text-color) py-10"
             >
-                <div class="flex flex-col items-center justify-center w-1/4">
+                <div class="flex flex-col items-center justify-center w-1/4 max-md:w-full">
                     <svg
                         class="w-1/7 h-auto"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1059,7 +1287,7 @@
                     <h2 class="text-lg font-bold mb-2">Téléphone</h2>
                     <p>06 60 62 61 61</p>
                 </div>
-                <div class="flex flex-col items-center justify-center w-1/4">
+                <div class="flex flex-col items-center justify-center w-1/4 max-md:w-full">
                     <svg
                         class="w-1/7 h-auto"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1075,7 +1303,7 @@
                     <h2 class="text-lg font-bold mb-2">Mail</h2>
                     <p>julien@stopvol.fr</p>
                 </div>
-                <div class="flex flex-col items-center justify-center w-1/4">
+                <div class="flex flex-col items-center justify-center w-1/4 max-md:w-full">
                     <svg
                         class="w-1/7 h-auto"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1093,15 +1321,15 @@
                 </div>
             </div>
             <div
-                class="w-full h-10 border-t-1 border-(--primary) bg-(--secondary) text-(--text-color) flex justify-between items-center z-4 px-[10vw]"
+                class="w-full border-t-1 border-(--primary) bg-(--secondary) text-(--text-color) flex justify-between items-center z-4 px-[10vw] max-md:flex-col py-3 max-md:px-0"
             >
-                <div class="flex items-center justify-start w-1/2">
+                <div class="flex items-center justify-start w-1/2 max-md:w-full max-md:justify-center max-md:text-center">
                     <p class="text-sm">
                         Copyright © 2025. Tous droits réservés
                         <a href="https://www.square-com.fr">SQUARECOM</a>
                     </p>
                 </div>
-                <div class="flex items-center justify-end w-1/2">
+                <div class="flex items-center justify-end w-1/2 max-md:w-full max-md:justify-center max-md:text-center">
                     <a href="#" class="hover:underline">Mentions légales</a>
                     <span class="mx-2">|</span>
                     <a href="#" class="hover:underline"
@@ -1113,32 +1341,32 @@
         <!-- absolute divs -->
         <!-- deco square 1 -->
         <div
-            class="w-1/8 h-1/4 absolute bg-(--primary) rounded-4xl left-[-4vw] top-0 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
+            class="w-1/8 max-md:hidden h-1/4 absolute bg-(--primary) rounded-4xl left-[-4vw] top-0 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
         ></div>
         <!-- deco square 2 -->
         <div
-            class="w-1/5 h-1/3 absolute bg-(--primary) rounded-4xl left-[-4vw] top-180 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
+            class="w-1/5 max-md:hidden h-1/3 absolute bg-(--primary) rounded-4xl left-[-4vw] top-180 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
         ></div>
         <!-- deco square 3 -->
         <div
-            class="w-1/5 h-1/2 absolute bg-(--primary) rounded-4xl left-[-13vw] top-350 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
+            class="w-1/5 max-md:hidden h-1/2 absolute bg-(--primary) rounded-4xl left-[-13vw] top-350 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
         ></div>
         <!-- deco square 4 -->
         <div
-            class="w-1/5 h-1/2 absolute bg-(--primary) rounded-4xl right-[-13vw] top-560 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
+            class="w-1/5 max-md:hidden h-1/2 absolute bg-(--primary) rounded-4xl right-[-13vw] top-560 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
         ></div>
         <!-- deco square 5 -->
         <div
-            class="w-2/5 h-1/3 absolute bg-(--primary) rounded-4xl left-[-20vw] top-875 rotate-15 z-0 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
+            class="w-2/5 max-md:hidden h-1/3 absolute bg-(--primary) rounded-4xl left-[-20vw] top-875 rotate-15 z-0 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
         ></div>
         <!-- deco square 6 -->
         <div
-            class="w-1/5 h-3/4 absolute bg-(--primary) rounded-4xl right-[-13vw] top-1000 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
+            class="w-1/5 max-md:hidden h-3/4 absolute bg-(--primary) rounded-4xl right-[-13vw] top-1000 rotate-15 z-1 border-(--secondary) border-1 shadow-cyan-300 shadow-xl/10 shadow-fixed"
         ></div>
         <!-- viewbox and w+h were edited to fit the page -->
         <!-- logo 1 -->
         <svg
-            class="w-1/2 h-full absolute right-[-23vw] top-142 z-1 -scale-x-100 text-(--text-color) opacity-10"
+            class="w-1/2 max-md:hidden h-full absolute right-[-23vw] top-142 z-1 -scale-x-100 text-(--text-color) opacity-10"
             version="1.1"
             viewBox="0 0 299.99999 300.00001"
             width="300"
@@ -1192,7 +1420,7 @@
         </svg>
         <!-- logo 2 -->
         <svg
-            class="w-1/2 h-full absolute left-[-23vw] top-540 z-1 -scale-x-100 text-(--text-color) opacity-10"
+            class="w-1/2 max-md:hidden h-full absolute left-[-23vw] top-540 z-1 -scale-x-100 text-(--text-color) opacity-10"
             version="1.1"
             viewBox="0 0 299.99999 300.00001"
             width="300"

@@ -2,6 +2,10 @@
 
 @theme {
   --shadow-fixed: 0 0 10px 5px;
+  --color-bg-logo-1: #0C8291;
+  --color-bg-logo-2: #D9011A;
+  --color-bg-logo-3: #FEBD18;
+  --color-bg-logo-4: #01315C;
 }
 
 :root {
